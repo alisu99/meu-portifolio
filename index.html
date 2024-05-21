@@ -6,66 +6,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Alisson Gustavo Alencar Santos</title>
 </head>
 
 <!-- https://www.rhuanbello.com -->
 
 <body>
-    <section class="intro">
-        <div class="container">
-            <div class="boas-vindas">
-                <h1>Olá, me chamo Alisson!</h1>
-                <p>Desenvolvedor Full Stack</p>
-            </div>
-            <div class="image">
-                <img src="/assets/img/imagem.jpg" alt="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#sobre">Sobre</a>
+                <a class="nav-item nav-link" href="#skills">Habilidades</a>
+                <a class="nav-item nav-link" href="#projects">Projetos</a>
+                <a class="nav-item nav-link" href="#contacts">Contato</a>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <section class="sobre">
+    <section id="sobre">
         <div class="container">
-            <div class="apresentação">
-                <h1>Sobre mim</h1>
+            <div class="banner">
+                <div class="intro">
+                    <div class="title">
+                        <h1>Olá, me chamo</h1>
+                        <span>Alisson!</span>
+                        <p>Desenvolvedor Full Stack</p>
+                    </div>
+                    <div class="actions">
+                        <a href="#">Download CV</a>
+                        <a href="mailto:alissonsts910@gmail.com">Contato</a>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="/assets/img/imagem.jpg" alt="">
+                </div>
             </div>
-            <div class="texto-sobre">
+            <div class="about">
+                <h2>Sobre mim</h2>
                 <p>Desenvolvedor Full-Stack com experiência linguagens como Python no Back-end e JavaScript no
                     Front-End. Apaixonado pelo desenvolvimento de componentes
-                    reutilizáveis. Também possui experiência em projetos gerenciados por Metodologias Ágeis. Cursando
+                    reutilizáveis. Também possui experiência em projetos gerenciados por Metodologias Ágeis.
+                    Cursando
                     Redes de Computadores e cursando Especialização em Front-End com Next.js & React na Cod3r.</p>
             </div>
         </div>
     </section>
 
-    <section class="habilidades">
-        <div class="container">
-            <div class="habilidades">
-                <h1>Hablidades</h1>
-            </div>
-            <div class="container-habilidades">
-                <div class="box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt=""></div>
-                <div class="box"><img src="https://devicon-website.vercel.app/api/django/plain.svg?color=%23007146" alt=""></div>
-                <div class="box"><img src="https://devicon-website.vercel.app/api/flask/original.svg?color=%23FFFFFF" alt=""></div>
-                <div class="box"><img src="https://devicon-website.vercel.app/api/mysql/plain.svg?color=%230087C1" alt=""></div>
-                <div class="box"><img src="https://devicon-website.vercel.app/api/sqlite/original.svg" alt=""></div>
-                <div class="box"><img src="https://devicon-website.vercel.app/api/html5/original.svg" alt=""></div>
-                <div class="box"><img src="https://devicon-website.vercel.app/api/css3/original.svg" alt=""></div>
-                <div class="box"><img src="https://devicon-website.vercel.app/api/bootstrap/original.svg" alt=""></div>
-                <div class="box"><img src="https://devicon-website.vercel.app/api/git/original.svg" alt=""></div>
-                <div class="box"><img src="https://devicon-website.vercel.app/api/github/original.svg?color=%23FFFFFF" alt=""></div>
-                <div class="box"><img src="https://devicon-website.vercel.app/api/vscode/original.svg" alt=""></div>
-                <div class="box"><img src="https://devicon-website.vercel.app/api/pycharm/original.svg" alt=""></div>
-                <div class="box"><img src="https://devicon-website.vercel.app/api/react/original-wordmark.svg" alt=""></div>
-                <div class="box"><img src="https://devicon-website.vercel.app/api/javascript/original.svg" alt=""></div>
+    <section id="skills">
+        <div class="skills">
+            <div class="container">
+                <h2>Hablidades</h2>
+                <div class="cards">
+                    <div class="box" key="1">
+                        <p>Python</p><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">
+                    </div>
+                    <div class="box" key="2">
+                        <p>Django</p><img src="https://devicon-website.vercel.app/api/django/plain.svg?color=%23007146"
+                            alt="">
+                    </div>
+                    <div class="box" key="3">
+                        <p>Flask</p><img src="https://devicon-website.vercel.app/api/flask/original.svg?color=%23FFFFFF"
+                            alt="">
+                    </div>
+                    <div class="box" key="4">
+                        <p>Mysql</p><img src="https://devicon-website.vercel.app/api/mysql/plain.svg?color=%230087C1"
+                            alt="">
+                    </div>
+                    <div class="box" key="5">
+                        <p>SQLite</p><img src="https://devicon-website.vercel.app/api/sqlite/original.svg" alt="">
+                    </div>
+                    <div class="box" key="6">
+                        <p>HTML5</p><img src="https://devicon-website.vercel.app/api/html5/original.svg" alt="">
+                    </div>
+                    <div class="box" key="7">
+                        <p>CSS3</p><img src="https://devicon-website.vercel.app/api/css3/original.svg" alt="">
+                    </div>
+                    <div class="box" key="8">
+                        <p>Bootstrap</p><img src="https://devicon-website.vercel.app/api/bootstrap/original.svg" alt="">
+                    </div>
+                    <div class="box" key="9">
+                        <p>Git</p><img src="https://devicon-website.vercel.app/api/git/original.svg" alt="">
+                    </div>
+                    <div class="box" key="10">
+                        <p>Github</p><img
+                            src="https://devicon-website.vercel.app/api/github/original.svg?color=%23FFFFFF" alt="">
+                    </div>
+                    <div class="box" key="13">
+                        <p>React</p><img src="https://devicon-website.vercel.app/api/react/original-wordmark.svg">
+                    </div>
+                    <div class="box" key="14">
+                        <p>JavaScript</p><img src="https://devicon-website.vercel.app/api/javascript/original.svg"
+                            alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="projetos">
-
+    <section id="projects">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="highlights">
+                <h3>Destaques</h3>
+                <div class="card-projects">
+                    <div class="box" id="1">
+                        <div class="cover">
+                            <img src="" alt="">
+                            <div class="details">
+                                <p>The Movie Guide</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/react.svg" alt="react">,<img
+                                        src="assets/mini-languages/typescript.svg" alt="typescript">,<img
+                                        src="assets/mini-languages/styledcomponents.svg" alt="styledcomponents">,<img
+                                        src="assets/mini-languages/materialui.svg" alt="materialui">,<img
+                                        src="assets/mini-languages/figma.svg" alt="figma">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>17 de Março de 2022</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="contato">
 
+    <section id="contacts">
+        <div class="contacts">
+            <div class="container">
+                <h2>Contatos</h2>
+                <div class="icons">
+                    <div class="icon">
+                        <a href="mailto:alissonsts910@gmail.com" target="_blank">
+                            <div class="box">
+                                <img src="/assets/img/contatcts/gmail.svg" alt="e-mail">
+                            </div>
+                        </a>
+                        <a href="mailto:alissonsts@gmail.com" target="_blank">
+                            <p>E-mail</p>
+                        </a>
+                        <a href="mailto:alissonsts@gmail.com" target="_blank">
+                            <p>alissonsts@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://api.whatsapp.com/send?phone=86981489619" target="_blank">
+                            <div class="box">
+                                <img src="/assets/img/contatcts/whatsapp.svg" alt="telefone">
+                            </div>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=86981489619" target="_blank">
+                            <p>Telefone</p>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=86981489619" target="_blank">
+                            <p>(86) 98148-9619</p>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/alisson-alencar99/" target="_blank">
+                            <div class="box">
+                                <img src="/assets/img/contatcts/linkedin.svg" alt="linkedin">
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alisson-alencar99/" target="_blank">
+                            <p>Linkedin</p>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alisson-alencar99/" target="_blank">
+                            <p>@alisson-alencar99</p>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://github.com/alisu99" target="_blank">
+                            <div class="box">
+                                <img src="/assets/img/contatcts/github.png" alt="github">
+                            </div>
+                        </a>
+                        <a href="https://github.com/alisu99" target="_blank">
+                            <p>Github</p>
+                        </a>
+                        <a href="https://github.com/alisu99" target="_blank">
+                            <p>@alisu99</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
