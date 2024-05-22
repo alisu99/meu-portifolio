@@ -526,7 +526,8 @@ section#skills .skills .container .cards {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 5rem
+    gap: 5rem;
+    width: 50%;
 }
 
 @media (max-width: 992px) {
@@ -539,7 +540,7 @@ section#skills .skills .container .cards {
 section#skills .skills .container .cards .box {
     position: relative;
     text-align: center;
-    background-color: #212121;
+    background-color: currentColor;
     width: 12rem;
     aspect-ratio: 1;
     padding: 0;
@@ -547,7 +548,8 @@ section#skills .skills .container .cards .box {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top-left-radius: 2.5rem;
+    border-top-left-radius: 1.5rem;
+    /* border-top-right-radius: 1rem; */
     cursor: pointer;
     transition: 0.2s
 }
@@ -655,8 +657,8 @@ section#contacts .contacts .icons .icon .box {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #212121;
-    border-radius: 50%
+    background-color: currentColor;
+    border-radius: 50%;
 }
 
 section#contacts .contacts .icons .icon .box img {
@@ -960,9 +962,10 @@ section#projects .container .cards-projects .box:hover .description {
 }
 
 @media (max-width: 992px) {
-    .modal .top .video {
-        display:flex;
-        justify-content: center
+    section#skills .skills .container .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
     }
 }
 
