@@ -120,7 +120,7 @@ body.open .background {
     padding-left: 20px;
     padding-right: 72px;
     background: currentColor;
-    
+
 }
 
 .navbar>button {
@@ -142,7 +142,7 @@ body.open .background {
     background-image: url("/assets/img/menu.svg");
     background-repeat: no-repeat;
     background-position: center;
-    
+
 }
 
 body.open .navbar-burger {
@@ -375,15 +375,14 @@ header.open {
     backdrop-filter: blur(10px)
 }
 
-header .container {
+.navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 2.5rem 0;
-    flex-wrap: wrap
+    gap: 1rem;
+    flex-wrap: nowrap;
 }
 
-header .container .menu i {
+.navbar .menu i {
     font-size: 2rem;
     color: #8257E6;
     cursor: pointer;
@@ -391,58 +390,73 @@ header .container .menu i {
     border-radius: 50%
 }
 
-header .container .menu i:hover {
+.navbar .menu i:hover {
     background-color: #8257E6;
     color: #13131F
 }
 
-header .container h2 {
+.navbar h2 {
     font-family: 'DM Sans', sans-serif;
     font-size: 2.6rem;
     font-weight: bold;
     color: #F9F9F9
 }
 
-header .container .toggle {
+.navbar .toggle {
     display: flex
 }
 
-header .container .toggle input {
+.navbar .toggle input {
     opacity: 0;
     position: absolute
 }
 
-header .container .toggle input:checked+.label .box {
+
+.navbar .toggle input:checked+.label .box {
     transform: translateX(4rem)
 }
 
+
 @media (max-width: 480px) {
-    header .container .toggle input:checked+.label .box {
+    .navbar .toggle input:checked+.label .box {
         transform: translateX(2rem)
     }
 }
 
-header .container .toggle input:checked+.label {
-    background-color: #F9F9F9
+.navbar.toggle input:checked+.label {
+    background-color: #F9F9F9;
 }
 
-header .container .toggle .label {
-    display: flex;
-    background: #8257E6;
+.navbar .toggle .label {
+    background-image: linear-gradient(90deg, #e65757 0%, #A40EE4 92.32%);
     width: 6rem;
     border-radius: 2rem;
-    padding: 0.3rem;
     cursor: pointer;
-    transition: background-color 0.5s
+    transition: background-color 0.5s;
+    height: 2rem;
 }
 
 @media (max-width: 480px) {
-    header .container .toggle .label {
-        width: 4rem
+    .navbar .toggle .label {
+        width: 3.5rem;
+        height: 1.5rem;
     }
 }
 
-header .container .toggle .label .box {
+.navbar h1 {
+    color: white;
+    font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 349px){
+    .navbar h1 {
+        font-size:medium;
+        text-align: left;
+    }
+}
+
+.navbar .toggle .label .box {
     background-color: #13131F;
     height: 2rem;
     width: 2rem;
@@ -451,7 +465,7 @@ header .container .toggle .label .box {
 }
 
 @media (max-width: 480px) {
-    header .container .toggle .label .box {
+    .navbar .toggle .label .box {
         height: 1.5rem;
         width: 1.5rem
     }
@@ -518,16 +532,6 @@ section#sobre .banner .profile img {
 .navbar .toggle input {
     opacity: 0;
     position: absolute;
-}
-
-.navbar .toggle .label {
-    display: flex;
-    background: #8257E6;
-    width: 6rem;
-    border-radius: 2rem;
-    padding: 0.3rem;
-    cursor: pointer;
-    transition: background-color 0.5s;
 }
 
 section#sobre .banner .profile img:hover {
@@ -666,7 +670,6 @@ section#sobre .banner .intro .actions a:nth-child(2) {
 section#sobre .banner .intro .actions a:hover {
     background-image: linear-gradient(90deg, rgb(190, 48, 48) 100%, rgba(130, 87, 230, 0.8) .2%);
     transform: translateY(-5px)
-    
 }
 
 @media (max-width: 860px) {
