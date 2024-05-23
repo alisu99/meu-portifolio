@@ -8,7 +8,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="shortcut icon" href="/assets/img/desenvolvedor.ico" type="image/x-icon">
-    <title>Bem Vindo!</title>
+    <title>Portifólio | Alisson Gustavo Alencar Santos</title>
 </head>
 
 <!-- https://www.rhuanbello.com -->
@@ -17,6 +17,12 @@
     <nav class="navbar">
         <h1 style="color: white; font-size: xx-large; font-family: 'Poppins', sans-serif;
         ">Portifólio</h1>
+        <div class="toggle">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <div class="box"></div>
+            </label>
+        </div>
     </nav>
     <button class="navbar-burger" onclick="toggleMenu()"></button>
     <nav class="menu">
@@ -31,9 +37,9 @@
             <div class="banner">
                 <div class="intro">
                     <div class="title">
-                        <h1>Olá, me chamo</h1>
+                        <h1 id="ola"></h1>
                         <span id="name"></span>
-                        <p>Desenvolvedor Full Stack</p>
+                        <p id="cargo"></p>
                     </div>
                     <div class="actions">
                         <a href="#">Download CV</a>
@@ -46,11 +52,12 @@
             </div>
             <div class="about">
                 <h2>Sobre mim</h2>
-                <p>Desenvolvedor Full-Stack com experiência linguagens como Python no Back-end e JavaScript no
-                    Front-End. Apaixonado pelo desenvolvimento de componentes
-                    reutilizáveis. Também possui experiência em projetos gerenciados por Metodologias Ágeis.
-                    Cursando
-                    Redes de Computadores e cursando Especialização em Front-End com Next.js & React na Cod3r.</p>
+                <p>Sou um desenvolvedor dedicado com experiência em Python, JavaScript, Django, Flask, HTML, CSS e
+                    Bootstrap, atualmente aprimorando minhas habilidades em React e Next.js. Minha paixão por tecnologia
+                    me motiva a continuar aprendendo e a desenvolver soluções eficientes. Meu objetivo é me tornar um
+                    desenvolvedor Full Stack completo, capaz de criar aplicações web modernas e robustas. Estou sempre
+                    aberto a novas oportunidades e a conectar-me com profissionais que compartilham meu entusiasmo pelo
+                    desenvolvimento.</p>
             </div>
         </div>
     </section>
@@ -239,7 +246,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
         </script>
-     <script src="assets/scripts/scripts.js"></script>
+    <script src="assets/scripts/scripts.js"></script>
     <script type="text/javascript">
         const toggleMenu = () => {
             document.body.classList.toggle("open");
