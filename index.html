@@ -16,7 +16,7 @@
 <body>
     <nav class="navbar">
         <h1 style="color: white; font-size: xx-large; font-family: 'Poppins', sans-serif;
-        ">Meu portifólio</h1>
+        ">Portifólio</h1>
     </nav>
     <button class="navbar-burger" onclick="toggleMenu()"></button>
     <nav class="menu">
@@ -32,7 +32,7 @@
                 <div class="intro">
                     <div class="title">
                         <h1>Olá, me chamo</h1>
-                        <span>Alisson!</span>
+                        <span id="name"></span>
                         <p>Desenvolvedor Full Stack</p>
                     </div>
                     <div class="actions">
@@ -106,34 +106,72 @@
             </div>
         </div>
     </section>
-    <section id="projects">
+    <section id="projects" class="js-section active">
         <div class="container">
             <h2>Projetos</h2>
             <div class="highlights">
                 <h3>Destaques</h3>
-                <div class="card-projects">
+                <div class="cards-projects">
                     <div class="box" id="1">
                         <div class="cover">
-                            <img src="" alt="">
+                            <img src="/assets/img/projects/faculdadeMalta.png" alt="dowhile 2021">
                             <div class="details">
-                                <p>The Movie Guide</p>
-                                <!-- <div class="mini-languages">
-                                    <img src="assets/mini-languages/react.svg" alt="react">,<img
-                                        src="assets/mini-languages/typescript.svg" alt="typescript">,<img
-                                        src="assets/mini-languages/styledcomponents.svg" alt="styledcomponents">,<img
-                                        src="assets/mini-languages/materialui.svg" alt="materialui">,<img
-                                        src="assets/mini-languages/figma.svg" alt="figma"> -->
+                                <p>Faculdade Malta</p>
                             </div>
                         </div>
+                        <div class="description">
+                            <a>Ver mais</a>
+                        </div>
                     </div>
-                    <div class="description">
-                        <p>17 de Março de 2022</p>
-                        <a>Ver mais</a>
+
+                    <div class="box" id="3">
+                        <div class="cover">
+                            <img src="/assets/img/projects/alencarst.png" alt="dowhile 2021">
+                            <div class="details">
+                                <p>Site Pessoal</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="4">
+                        <div class="cover">
+                            <img src="/assets/img/projects/metas.png" alt="dowhile 2021">
+                            <div class="details">
+                                <p>MetaBoard</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="4">
+                        <div class="cover">
+                            <img src="/assets/img/projects/upEstacionamento.png" alt="dowhile 2021">
+                            <div class="details">
+                                <p>UP Estacionamento</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="box" id="4">
+                        <div class="cover">
+                            <img src="/assets/img/projects/construtoraJurema.png" alt="dowhile 2021">
+                            <div class="details">
+                                <p>Construtora Jurema</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>Ver mais</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
     </section>
 
     <section id="contacts">
@@ -201,6 +239,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
         </script>
+     <script src="assets/scripts/scripts.js"></script>
     <script type="text/javascript">
         const toggleMenu = () => {
             document.body.classList.toggle("open");
