@@ -1078,12 +1078,6 @@ section#projects .container .cards-projects .box:hover .description {
     animation: fade 1s
 }
 
-.menuOpen h2 {
-    color: #8257E6;
-    font-weight: 600;
-    font-size: 3.8rem
-}
-
 @media (max-width: 660px) {
     .menuOpen h2 {
         font-size: clamp(1.6rem, 6vw, 3rem) !important
@@ -1310,7 +1304,7 @@ body.light-mode {
 }
 
 body.light-mode nav {
-    background-color: lightslategray;
+    background-color: gainsboro;
     transition: all 1s;
 }
 
@@ -1329,13 +1323,14 @@ body.light-mode #sobre .container .banner .intro .title #ola {
     transition: all 1s;
 }
 
-/* body.light-mode .banner span {
-    color: #13131F !important
-} */
 
-body.light-mode h2,
-body.light-mode h3 {
-    color: #13131F;
+body.light-mode #sobre h2,
+body.light-mode #skills  .container h2,
+body.light-mode #projects .container h2,
+body.light-mode #projects .container h3,
+body.light-mode #contacts .container h2,
+body.light-mode #contacts .container .icons .icon p {
+    color: black;
     transition: all 1s;
 }
 
