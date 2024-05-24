@@ -345,7 +345,7 @@ a {
 
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 7.5px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -639,7 +639,6 @@ section#sobre .banner .intro .actions a:nth-child(2) {
 }
 
 section#sobre .banner .intro .actions a:hover {
-    background-image: linear-gradient(90deg, rgb(190, 48, 48) 100%, rgba(130, 87, 230, 0.8) .2%);
     transform: translateY(-5px)
 }
 
@@ -1355,6 +1354,10 @@ body.light-mode .navbar .toggle .label .box {
     transition: all 0.50s;
 }
 
-body.light-mode .navbar-burger {
-    border-color: currentColor;
+body.light-mode section#sobre .about p {
+    color: currentColor;
+}
+
+body.light-mode section#skills .skills .container .cards .box p {
+    color: black;
 }
