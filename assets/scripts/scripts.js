@@ -12,7 +12,7 @@ function typeWriter(callback) {
     }
 }
 
-const cargo = "Desenvolvedor Full Stack"
+const cargo = "Desenvolvedor FullStack"
 const velocidade = 50;
 let x = 0;
 
@@ -50,6 +50,38 @@ window.onload = function () {
 
 document.addEventListener('DOMContentLoaded', (event) => {
     const timelinePanel = document.getElementById('timelinePanel');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    timelinePanel.addEventListener('mousedown', (e) => {
+        isDown = true;
+        timelinePanel.classList.add('active');
+        startX = e.pageX - timelinePanel.offsetLeft;
+        scrollLeft = timelinePanel.scrollLeft;
+    });
+
+    timelinePanel.addEventListener('mouseleave', () => {
+        isDown = false;
+        timelinePanel.classList.remove('active');
+    });
+
+    timelinePanel.addEventListener('mouseup', () => {
+        isDown = false;
+        timelinePanel.classList.remove('active');
+    });
+
+    timelinePanel.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - timelinePanel.offsetLeft;
+        const walk = (x - startX); 
+        timelinePanel.scrollLeft = scrollLeft - walk;
+    });
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const timelinePanel = document.getElementById('card-projects');
     let isDown = false;
     let startX;
     let scrollLeft;
