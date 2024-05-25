@@ -118,7 +118,7 @@ body.open .background {
     width: 100%;
     background: currentColor;
     transition: all 1s;
-    padding: 2.5rem 0;
+    padding: 1.5rem 0;
     gap: 1rem;
     flex-wrap: nowrap;
 }
@@ -483,16 +483,22 @@ section#sobre .banner {
 
 @media (max-width: 480px) {
     section#sobre .banner .profile {
-        text-align: center
+        text-align: center;
+        justify-content: center;
+        display: flex;
     }
+
+
 }
 
 section#sobre .banner .profile img {
     cursor: pointer;
-    transition: 0.2s;
+    transition: 1s;
     max-width: 100%;
     animation: scaleDelayed 1s 6.5s;
     margin: 5rem;
+    border-radius: 50%;
+    background-image: linear-gradient(90deg, rgb(230, 87, 87) .2%, rgba(121, 48, 190, 0.648) 100%);
 }
 
 .navbar .toggle {
@@ -685,7 +691,7 @@ section#sobre .about p {
     font-family: 'DM Sans', sans-serif;
     font-size: 1.8rem;
     text-align: center;
-    width: 55%;
+    width: 70%;
     line-height: 180%
 }
 
@@ -1360,4 +1366,9 @@ body.light-mode section#sobre .about p {
 
 body.light-mode section#skills .skills .container .cards .box p {
     color: black;
+}
+
+body.light-mode section#sobre .banner .profile img{
+    background-image: linear-gradient(90deg, #bdbdbd 0%, #616161 92.32%);
+    transition: all 1s;
 }
