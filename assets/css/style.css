@@ -914,7 +914,7 @@ section#projects .container h2 {
     transition: all 1s;
 }
 
-section#projects .container h3 {
+section#projects .container .highlights h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 2.4rem;
@@ -922,6 +922,25 @@ section#projects .container h3 {
     position: relative;
     display: inline-block;
     margin-block: 10rem 5rem
+}
+
+section#projects .container .highlights h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #F9F9F9;
+    position: relative;
+    display: inline-block;
+}
+
+.text-description {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 5rem;
+}
+
+.links {
+    display: flex;
+    gap: 1.5rem;
 }
 
 section#projects .container h3::after {
@@ -939,10 +958,12 @@ section#projects .container .cards-projects {
     display: flex;
     overflow: auto;
     width: 100%;
-    cursor: pointer;
+    cursor: grab;
+    user-select: none;
     gap: 50px;
     padding-bottom: 10rem;
 }
+
 
 @media (max-width: 768px) {
     section#projects .container .cards-projects {
@@ -976,7 +997,7 @@ section#projects .container .cards-projects .box {
 
 section#projects .container .cards-projects .box:hover {
     position: relative;
-    z-index: 2
+    z-index: 2;
 }
 
 @media (max-width: 480px) {
@@ -1046,7 +1067,7 @@ section#projects .container .cards-projects .box .description {
     background-color: #212121;
     padding: 1.5rem 2rem 1.2rem 2rem;
     display: none;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     justify-content: center;
     border-radius: 0 0 2rem 2rem;
