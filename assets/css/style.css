@@ -109,7 +109,7 @@ body.open .background {
 }
 
 .navbar {
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 0;
     display: flex;
@@ -276,6 +276,19 @@ a {
     to {
         opacity: 1;
         transform: translateY(0)
+    }
+}
+
+@keyframes hiddenUp {
+    from {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    to {
+        display: none;
+        opacity: 0;
+        transform: translateY(-200%)
     }
 }
 
@@ -928,7 +941,13 @@ section#projects .container .highlights h4 {
     font-family: 'Poppins', sans-serif;
     color: #F9F9F9;
     position: relative;
-    display: inline-block;
+}
+
+section#projects .container .highlights p {
+    font-family: 'Poppins', sans-serif;
+    color: #F9F9F9;
+    font-size: x-small;
+    line-height: 1.5rem;
 }
 
 .text-description {
@@ -961,7 +980,7 @@ section#projects .container .cards-projects {
     cursor: grab;
     user-select: none;
     gap: 50px;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
 }
 
 
@@ -972,6 +991,7 @@ section#projects .container .cards-projects {
         width: 100%;
         gap: 5rem;
         align-items: center;
+        padding: 1rem;
     }
 }
 
@@ -980,14 +1000,13 @@ section#projects .container .cards-projects::-webkit-scrollbar {
 }
 
 section#projects .container .cards-projects::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(90deg, rgb(230, 87, 87) .2%, rgba(121, 48, 190, 0.648) 100%);
+    background-image: linear-gradient(90deg, rgb(230, 87, 87) .2%, rgb(121, 48, 190) 100%);
     border-radius: 4px;
 }
 
 section#projects .container .cards-projects::-webkit-scrollbar-track {
     background: #f0f0f0;
     border-radius: 4px;
-    transition: all 1s;
 }
 
 section#projects .container .cards-projects .box {
@@ -995,20 +1014,10 @@ section#projects .container .cards-projects .box {
     min-width: 30%;
 }
 
-section#projects .container .cards-projects .box:hover {
-    position: relative;
-    z-index: 2;
-}
-
-@media (max-width: 480px) {
-    section#projects .container .cards-projects .box:hover {
-        transform: scale(1.05)
-    }
-}
-
 section#projects .container .cards-projects .box .cover {
     position: relative;
     cursor: pointer;
+    z-index: 1;
 }
 
 section#projects .container .cards-projects .box .cover::after {
@@ -1108,9 +1117,16 @@ section#projects .container .cards-projects .box:hover .cover::before {
 
 section#projects .container .cards-projects .box:hover .description {
     display: flex;
-    animation: showDown 0.5s forwards;
+    animation: showDown 0.50s forwards;
     z-index: -50
 }
+
+section#projects .container .cards-projects .box:not(:hover) .description {
+    display: flex;
+    animation: hiddenUp 0.30s forwards;
+    z-index: -50
+}
+
 
 @media (max-width: 992px) {
     section#projects .container .cards-projects .box {
@@ -1428,7 +1444,6 @@ body.light-mode #contacts .container .icons .icon p {
 .panel::-webkit-scrollbar-track {
     background: #f0f0f0;
     border-radius: 4px;
-    transition: all 1s;
 }
 
 .timeline-item {
@@ -1481,6 +1496,7 @@ body.light-mode #contacts .container .icons .icon p {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        z-index: -1;
     }
 
     .timeline-item p {
@@ -1555,4 +1571,12 @@ body.light-mode section#projects .container .cards-projects::-webkit-scrollbar-t
 
 body.light-mode section#projects .container .cards-projects .box .description {
     background-color: lightgray;
+}
+
+body.light-mode section#projects .container .highlights h4 {
+    color: black;
+}
+
+body.light-mode section#projects .container .highlights p {
+    color: black;
 }
