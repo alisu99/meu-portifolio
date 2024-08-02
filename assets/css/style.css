@@ -687,7 +687,6 @@ section#sobre .banner .intro .actions a:hover {
 section#sobre .about {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 4rem
 }
 
@@ -725,9 +724,8 @@ section#sobre .about p {
     color: #828282;
     font-family: 'DM Sans', sans-serif;
     font-size: 1.8rem;
-    text-align: center;
-    width: 70%;
-    line-height: 180%
+    width: 75%;
+    line-height: 180%;
 }
 
 @media (max-width: 1200px) {
@@ -1427,9 +1425,10 @@ body.light-mode #contacts .container .icons .icon p {
 
 .panel {
     display: flex;
-    overflow: auto;
+    overflow: hidden;
     width: 100%;
     cursor: pointer;
+    user-select: none;
 }
 
 .panel::-webkit-scrollbar {
